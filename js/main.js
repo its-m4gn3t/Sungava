@@ -24,6 +24,42 @@ function registerHandler() {
       document.body.innerHTML = markup;
     })
   };
+  document.getElementById("gallery").onclick = (_event) => {
+    _event.preventDefault();
+    loadPage('gallery1').then( markup => {
+      history.pushState({}, "", "/gallery");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
+  document.getElementById("blog").onclick = (_event) => {
+    _event.preventDefault();
+    loadPage('blog').then( markup => {
+      history.pushState({}, "", "/blog");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
+  document.getElementById("contact_us").onclick = (_event) => {
+    _event.preventDefault();
+    loadPage('contact_us').then( markup => {
+      history.pushState({}, "", "/contactUs");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
+  document.getElementById("blog").onclick = (_event) => {
+    _event.preventDefault();
+    loadPage('blog').then( markup => {
+      history.pushState({}, "", "/blog");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
 }
 
 onpopstate = (_event) => {
