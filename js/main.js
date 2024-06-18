@@ -42,9 +42,10 @@ function registerHandler() {
       document.body.innerHTML = markup;
     })
   };
-  document.getElementById("contact_us").onclick = (_event) => {
+  document.getElementById("contactUs").onclick = (_event) => {
+
     _event.preventDefault();
-    loadPage('contact_us').then( markup => {
+    loadPage('contactUs').then( markup => {
       history.pushState({}, "", "/contactUs");
 
       bodyHistory.push(document.body.innerHTML);
@@ -52,6 +53,52 @@ function registerHandler() {
     })
   };
   document.getElementById("blog").onclick = (_event) => {
+    _event.preventDefault();
+    loadPage('blog').then( markup => {
+      history.pushState({}, "", "/blog");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
+  document.getElementById("about_").onclick = (_event) => {
+    _event.preventDefault();
+    loadPage('about').then( markup => {
+      history.pushState({}, "", "/about");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
+  document.getElementById("gallery_").onclick = (_event) => {
+    _event.preventDefault();
+    loadPage('gallery1').then( markup => {
+      history.pushState({}, "", "/gallery");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
+  document.getElementById("blog_").onclick = (_event) => {
+    _event.preventDefault();
+    loadPage('blog').then( markup => {
+      history.pushState({}, "", "/blog");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
+  document.getElementById("contactUs_").onclick = (_event) => {
+
+    _event.preventDefault();
+    loadPage('contactUs').then( markup => {
+      history.pushState({}, "", "/contactUs");
+
+      bodyHistory.push(document.body.innerHTML);
+      document.body.innerHTML = markup;
+    })
+  };
+  document.getElementById("blog_").onclick = (_event) => {
     _event.preventDefault();
     loadPage('blog').then( markup => {
       history.pushState({}, "", "/blog");
