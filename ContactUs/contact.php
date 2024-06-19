@@ -32,7 +32,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jaffna College | Contact Us</title>
+    <title>Sungabha PSS | Contact Us</title>
     <link rel="shortcut icon" type="images" href="images/logo.jpg">
     <link rel="stylesheet" href="style.css" />
     <script
