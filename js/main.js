@@ -1,4 +1,4 @@
-async function loadPage(page_name) {
+loadPage = page_name => {
   fetch(`${page_name}.html`).then( resp => { resp.text().then ( markup => {
       document.querySelector('#app').innerHTML = markup;
     }) 
